@@ -6,7 +6,6 @@
   "bin": {
     "filemaker": "bin/filemaker.js"
   },
-  "preferGlobal": true,
   "engines": {
     "node": ">=14.0.0"
   },
@@ -16,11 +15,15 @@
   ],
   "scripts": {
     "start": "node bin/filemaker.js",
-    "postversion": "git push && git push --tags && npm publish"
+    "publish:pkg": "npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com"
+    "url": "git+https://github.com/skullvension/filemaker-cli.git"
+  },
+  "homepage": "https://github.com/skullvension/filemaker-cli#readme",
+  "bugs": {
+    "url": "https://github.com/skullvension/filemaker-cli/issues"
   },
   "keywords": [
     "cli",
@@ -30,7 +33,7 @@
     "boilerplate",
     "project-setup"
   ],
-  "author": "",
+  "author": "SkullVension",
   "license": "MIT",
   "dependencies": {
     "inquirer": "^8.2.6"
